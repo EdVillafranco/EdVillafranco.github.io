@@ -15,7 +15,7 @@ body {
   line-height: 28px;
   color: #6a6a6a;
   font-size: 14px;
-  background-color: #eff2f1; }
+  background-color: #f1eff2; }
 
 a {
   text-decoration: none;
@@ -31,7 +31,7 @@ a {
     font-weight: 600; }
 
 .custom-navbar {
-  background: #8e37e0 !important;
+  background: #ee7c3a !important;
   padding-top: 20px;
   padding-bottom: 20px; }
   .custom-navbar .navbar-brand {
@@ -96,7 +96,8 @@ a {
         margin-right: 20px; }
 
 .hero {
-  background: #8e37e0;
+  background: rgb(168,88,199);
+background: linear-gradient(270deg, rgba(168,88,199,1) 0%, rgba(165,88,209,1) 50%, rgba(123,79,140,1) 100%);
   padding: calc(4rem - 30px) 0 0rem 0; }
   @media (min-width: 768px) {
     .hero {
@@ -127,7 +128,7 @@ a {
       top: 0px;
       right: 0px;
       z-index: 2;
-      max-width: 780px;
+      max-width: 450px;
       left: -20px; }
       @media (min-width: 768px) {
         .hero .hero-img-wrap img {
@@ -177,15 +178,15 @@ a {
     background: #8e37e0;
     border-color: #8e37e0; }
     .btn.btn-primary:hover {
-      background: #314d43;
-      border-color: #314d43; }
+      background: #4d3c31;
+      border-color: #4d3c31; }
   .btn.btn-secondary {
     color: #2f2f2f;
-    background: #f9bf29;
-    border-color: #f9bf29; }
+    background: #f98e29;
+    border-color: #f98e29; }
     .btn.btn-secondary:hover {
-      background: #f8b810;
-      border-color: #f8b810; }
+      background: #f5a54b;
+      border-color: #f5a54b; }
   .btn.btn-white-outline {
     background: transparent;
     border-width: 2px;
@@ -197,6 +198,78 @@ a {
 .section-title {
   color: #2f2f2f; }
 
+  .information-section {
+    padding: 7rem 0; }
+    .information-section .product-item {
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      position: relative;
+      padding-bottom: 50px;
+      cursor: pointer; }
+      .information-section .product-item .product-thumbnail {
+        margin-bottom: 30px;
+        position: relative;
+        top: 0;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease; }
+      .information-section .product-item h3 {
+        font-weight: 600;
+        font-size: 16px; }
+      .information-section .product-item strong {
+        font-weight: 800 !important;
+        font-size: 18px !important; }
+      .information-section .product-item h3, .information-section .product-item strong {
+        color: #2f2f2f;
+        text-decoration: none; }
+      .information-section .product-item .icon-cross {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        background: #2f2f2f;
+        bottom: 15px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin-bottom: -17.5px;
+        border-radius: 50%;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease; }
+        .information-section .product-item .icon-cross img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+      .information-section .product-item:before {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        content: "";
+        background: #c3b0e4;
+        height: 0%;
+        z-index: -1;
+        border-radius: 10px;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease; }
+      .information-section .product-item:hover .product-thumbnail {
+        top: -25px; }
+      .information-section .product-item:hover .icon-cross {
+        bottom: 0;
+        opacity: 1;
+        visibility: visible; }
+      .information-section .product-item:hover:before {
+        height: 70%; }
+  
 .product-section {
   padding: 7rem 0; }
   .product-section .product-item {
@@ -253,7 +326,7 @@ a {
       right: 0;
       position: absolute;
       content: "";
-      background: #dce5e4;
+      background: #c3b0e4;
       height: 0%;
       z-index: -1;
       border-radius: 10px;
@@ -407,7 +480,7 @@ a {
       content: "";
       position: absolute;
       border-radius: 20px;
-      background: #dce5e4;
+      background: #e2dce5;
       width: 98px;
       height: 98px;
       top: 50%;
